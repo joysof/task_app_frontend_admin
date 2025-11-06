@@ -20,10 +20,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="flex bg-white shadow-lg rounded-2xl overflow-hidden max-w-4xl w-full">
+    <div className="min-h-screen mx-auto flex items-center justify-center bg-gray-100 p-4">
+      <div className="flex py-20 justify-center mx-auto max-w-[1296px] shadow-lg bg-white  rounded-2xl overflow-hidden w-full">
         {/* Left Side Image */}
-        <div className="hidden md:block w-1/2 relative">
+        <div className="w-[488px] relative">
           <Image
             src={LoginImage}
             alt="Login Image"
@@ -33,7 +33,7 @@ export default function LoginPage() {
         </div>
 
         {/* Right Side Form */}
-        <div className="w-full md:w-1/2 p-10 text-[#333333]">
+        <div className="w-[494px] h-[] p-10 text-[#333333]">
         <Image src={logo} alt="logo"/>
           <h2 className="text-3xl font-bold mb-6">Hello,Welcome!</h2>
           <h5 className=" capitalize text-[16px]">Please enter your detaills below to continue</h5>

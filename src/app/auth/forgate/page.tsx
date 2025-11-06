@@ -50,12 +50,12 @@ export default function ForgotPasswordPage() {
               
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-[#318130] text-white py-3 rounded-lg hover:bg-green-700 transition"
+            <Link href={'/auth/verify'}
+              
             >
-              Send OTP
-            </button>
+              <button type="submit"
+              className="w-full bg-[#318130] text-white py-3 rounded-lg hover:bg-green-700 transition">Send OTP</button>
+            </Link>
           </form>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { useState, useRef } from 'react'
 import verifyOtp from '@/public/adminVeryfiOtp.png'
 import { MdOutlineArrowBackIosNew } from 'react-icons/md'
 import logo from '@/public/logo.png'
+import Link from 'next/link'
 export default function VerifyOTPPage() {
   const [otp, setOtp] = useState<string[]>(Array(6).fill(''))
   const inputsRef = useRef<(HTMLInputElement | null)[]>([])
@@ -47,7 +48,7 @@ export default function VerifyOTPPage() {
       <div className="w-[494px] flex flex-col">
         <Image src={logo} alt="logo"></Image>
         <div className="flex gap-3 items-center mt-5">
-          <MdOutlineArrowBackIosNew className="text-2xl" />
+          <Link href={'/auth/forgate'}><MdOutlineArrowBackIosNew className="text-2xl" /></Link>
           <h3>verify OTP</h3>
         </div>
         <p className="text-[16px] font-medium mt-5">
