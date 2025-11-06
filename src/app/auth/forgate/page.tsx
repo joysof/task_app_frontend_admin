@@ -31,7 +31,7 @@ export default function ForgotPasswordPage() {
         {/* Right Side Form */}
         <div className="w-full md:w-1/2 p-10 text-[#333333]">
           <Image src={logo} alt="logo" className="mb-4" />
-          <h2 className="text-3xl flex gap-3 font-bold mb-3"><Link href={'/login'}><MdOutlineArrowBackIosNew/></Link>Forgot Password?</h2>
+          <h2 className="text-3xl flex gap-3 font-bold mb-3"><Link href={'/auth/login'}><MdOutlineArrowBackIosNew/></Link>Forgot Password?</h2>
           <p className="text-[15px] text-gray-600 mb-6">Enter the email address associated with your account. We'll send you an OTP to your email. </p>
 
           <form onSubmit={handleSubmit} className="space-y-5">

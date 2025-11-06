@@ -70,11 +70,11 @@ export default function LoginPage() {
 
            <div className="flex justify-between items-center">
              <div className="flex items-center space-x-2">
-              <input type="checkbox" id="remember" className="h-4 w-4 accent-[#318130]" />
-              <label htmlFor="remember" className="text-sm">Remember Me</label>
+              <input type="checkbox" id="remember" className="h-4 w-4 cursor-pointer accent-[#318130]" />
+              <label htmlFor="remember" className="text-sm cursor-pointer">Remember Me</label>
             </div>
             <div>
-               <Link href={'/forgate'} className="text-[#318130]"> Forgot Password?</Link>
+               <Link href={'/auth/forgate'} className="text-[#318130]"> Forgot Password?</Link>
             </div>
            </div>
 
