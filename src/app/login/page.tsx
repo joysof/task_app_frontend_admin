@@ -8,6 +8,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 
 import LoginImage from '@/public/adminLogin.png'
 import logo from '@/public/logo.png'
+import Link from "next/link";
 export default function LoginPage() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -67,10 +68,15 @@ export default function LoginPage() {
              </div>
             </div>
 
-            <div className="flex items-center space-x-2">
+           <div className="flex justify-between items-center">
+             <div className="flex items-center space-x-2">
               <input type="checkbox" id="remember" className="h-4 w-4 accent-[#318130]" />
               <label htmlFor="remember" className="text-sm">Remember Me</label>
             </div>
+            <div>
+               <Link href={'/forgate'} className="text-[#318130]"> Forgot Password?</Link>
+            </div>
+           </div>
 
             <button
               type="submit"
