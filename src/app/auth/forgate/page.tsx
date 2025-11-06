@@ -16,10 +16,10 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="flex bg-white shadow-lg rounded-2xl overflow-hidden max-w-4xl w-full">
+      <div className="flex justify-center max-w-[1296px] py-20 bg-white shadow-lg rounded-2xl overflow-hidden w-full">
 
         {/* Left Side Image */}
-        <div className="hidden md:block w-1/2 relative">
+        <div className=" w-[488px] h-[460px] relative">
           <Image
             src={ForgotImage}
             alt="Forgot Password"
@@ -29,7 +29,7 @@ export default function ForgotPasswordPage() {
         </div>
 
         {/* Right Side Form */}
-        <div className="w-full md:w-1/2 p-10 text-[#333333]">
+        <div className="w-[494px] h-[466px]  p-10 text-[#333333]">
           <Image src={logo} alt="logo" className="mb-4" />
           <h2 className="text-3xl flex gap-3 font-bold mb-3"><Link href={'/auth/login'}><MdOutlineArrowBackIosNew/></Link>Forgot Password?</h2>
           <p className="text-[15px] text-gray-600 mb-6">Enter the email address associated with your account. We'll send you an OTP to your email. </p>
@@ -54,7 +54,7 @@ export default function ForgotPasswordPage() {
               
             >
               <button type="submit"
-              className="w-full bg-[#318130] text-white py-3 rounded-lg hover:bg-green-700 transition">Send OTP</button>
+              className="w-full bg-[#318130] text-white py-3 rounded-lg hover:bg-green-700 transition cursor-pointer">Send OTP</button>
             </Link>
           </form>
         </div>

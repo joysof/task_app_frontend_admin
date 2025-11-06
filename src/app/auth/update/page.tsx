@@ -21,24 +21,26 @@ export default function UpdatePasswordPage() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center gap-10 justify-center bg-gray-100 px-5">
+    <div className="min-h-screen mx-auto flex items-center justify-center bg-gray-100 p-4">
       {/* Left Side Image */}
-      <div>
+     <div className='md:flex text-[#333333] justify-center max-w-[1296px] py-20 bg-white shadow-lg rounded-2xl overflow-hidden w-full'>
+       <div className='w-[519px] h-[460px]'>
         <Image src={updatePasswordImage} alt="Update Password" />
       </div>
 
       {/* Right Side Form */}
-      <div className="w-[494px] p-10 bg-white rounded-2xl shadow-lg flex flex-col items-center">
+      <div className="w-[494px] p-10 bg-white rounded-2xl flex flex-col items-center">
         <Image src={logo} alt="logo" />
         <h2 className="text-3xl font-bold mt-5 mb-6">Update Password</h2>
         <form onSubmit={handleSubmit} className="w-full space-y-5">
           {/* New Password */}
-          <div className="flex items-center border rounded-lg p-3">
-            <RiLockPasswordLine className="text-gray-500 text-xl mr-2" />
+          <label htmlFor="newPassword">new password</label>
+          <div className="flex p-3 mt-3 bg-[#f7f7f7] items-center rounded-lg">
+            <RiLockPasswordLine className='text-gray-500 text-xl mr-2' />
             <input
               type="password"
               placeholder="New Password"
-              className="w-full outline-none bg-transparent"
+              className="w-full pl-2 outline-none border-none"
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
               required
@@ -46,7 +48,8 @@ export default function UpdatePasswordPage() {
           </div>
 
           {/* Confirm Password */}
-          <div className="flex items-center border rounded-lg p-3">
+          <label htmlFor="confromPassword">Confirm Passsword</label>
+          <div className="flex p-3 mt-3 bg-[#f7f7f7] items-center rounded-lg">
             <RiLockPasswordLine className="text-gray-500 text-xl mr-2" />
             <input
               type="password"
@@ -63,6 +66,7 @@ export default function UpdatePasswordPage() {
           </button>
         </form>
       </div>
+     </div>
     </div>
   );
 }
